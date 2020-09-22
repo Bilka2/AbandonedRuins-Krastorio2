@@ -1,0 +1,48 @@
+return
+{
+  entities =
+  {
+    {"kr-wind-turbine", {x = 2.5, y = -3}, {}},
+    {"small-electric-pole", {x = -2.5, y = -1}, {dmg = {dmg = {type = "random", min = 20, max = 60}}, }},
+    {"small-electric-pole", {x = 2.5, y = -1}, {}},
+    {"kr-wind-turbine", {x = -2.5, y = 2}, {dmg = {dmg = {type = "random", min = 40, max = 160}}, }},
+    {"kr-wind-turbine", {x = 2.5, y = 2}, {}},
+  },
+  tiles =
+  {
+    {"kr-white-reinforced-plate", {x = -4, y = 0.5}},
+    {"kr-white-reinforced-plate", {x = -4, y = 1.5}},
+    {"kr-white-reinforced-plate", {x = -3, y = -3.5}},
+    {"kr-white-reinforced-plate", {x = -3, y = -0.5}},
+    {"kr-white-reinforced-plate", {x = -3, y = 0.5}},
+    {"kr-white-reinforced-plate", {x = -3, y = 1.5}},
+    {"kr-white-reinforced-plate", {x = -3, y = 2.5}},
+    {"kr-white-reinforced-plate", {x = -2, y = -3.5}},
+    {"kr-white-reinforced-plate", {x = -2, y = -0.5}},
+    {"kr-white-reinforced-plate", {x = -2, y = 0.5}},
+    {"kr-white-reinforced-plate", {x = -2, y = 1.5}},
+    {"kr-white-reinforced-plate", {x = -2, y = 2.5}},
+    {"kr-white-reinforced-plate", {x = -1, y = -0.5}},
+    {"kr-white-reinforced-plate", {x = -1, y = 1.5}},
+    {"kr-white-reinforced-plate", {x = 0, y = -0.5}},
+    {"kr-white-reinforced-plate", {x = 0, y = 1.5}},
+    {"kr-white-reinforced-plate", {x = 1, y = -2.5}},
+    {"kr-white-reinforced-plate", {x = 1, y = -1.5}},
+    {"kr-white-reinforced-plate", {x = 1, y = -0.5}},
+    {"kr-white-reinforced-plate", {x = 1, y = 0.5}},
+    {"kr-white-reinforced-plate", {x = 1, y = 1.5}},
+    {"kr-white-reinforced-plate", {x = 1, y = 2.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = -3.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = -2.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = -1.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = -0.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = 0.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = 1.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = 2.5}},
+    {"kr-white-reinforced-plate", {x = 2, y = 3.5}},
+    {"kr-white-reinforced-plate", {x = 3, y = -3.5}},
+    {"kr-white-reinforced-plate", {x = 3, y = -2.5}},
+    {"kr-white-reinforced-plate", {x = 3, y = 2.5}},
+    {"kr-white-reinforced-plate", {x = 3, y = 3.5}},
+  }
+}
