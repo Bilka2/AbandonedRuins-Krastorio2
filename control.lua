@@ -1,6 +1,6 @@
 local base_util = require("__core__/lualib/util")
-local small_ruin = require("ruins/small-reinforced-windturbines")
-local medium_ruin = require("ruins/medium-tree-greenhouse")
+local small_ruins = {require("ruins/small-fluid-burner"), require("ruins/small-reinforced-windturbines"),  require("ruins/small-sentinel-outpost")}
+local medium_ruins = {require("ruins.medium-creep-biomass"), require("ruins.medium-fuel-plant"), require("ruins/medium-tree-greenhouse")}
 local large_ruin = require("ruins/large-matter-plant")
 
 local function make_ruin_set()
@@ -8,8 +8,12 @@ local function make_ruin_set()
   local base_ruins = remote.call("AbandonedRuins", "get_ruin_set", "base")
 
   -- Add the custom Krastorio2 ruins to the existing ruins.
-  table.insert(base_ruins.small, small_ruin)
-  table.insert(base_ruins.medium, medium_ruin)
+  for _, ruin in pairs(small_ruins) do
+    table.insert(base_ruins.small, ruin)
+  end
+  for _, ruin in pairs(medium_ruins) do
+    table.insert(base_ruins.medium, ruin)
+  end
   table.insert(base_ruins.large, large_ruin)
 
   if settings.startup["kr-more-realistic-weapon"].value then
