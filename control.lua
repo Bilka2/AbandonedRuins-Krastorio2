@@ -1,6 +1,6 @@
 local base_util = require("__core__/lualib/util")
 local small_ruins = {require("ruins/small-fluid-burner"), require("ruins/small-reinforced-windturbines"),  require("ruins/small-sentinel-outpost")}
-local medium_ruins = {require("ruins.medium-creep-biomass"), require("ruins.medium-fuel-plant"), require("ruins/medium-tree-greenhouse")}
+local medium_ruins = {require("ruins/medium-creep-biomass"), require("ruins/medium-fuel-plant"), require("ruins/medium-tree-greenhouse")}
 local large_ruin = require("ruins/large-matter-plant")
 
 local function make_ruin_set()
@@ -21,6 +21,12 @@ local function make_ruin_set()
     --  So, replace those spawned items within the ruins.
     replace_item_name_in_all_ruins(base_ruins, "firearm-magazine", "rifle-magazine")
     replace_item_name_in_all_ruins(base_ruins, "piercing-rounds-magazine", "armor-piercing-rifle-magazine")
+  end
+
+  if settings.startup["kr-rebalance-vehicles&fuels"].value then
+    -- With the fuel overhaul, vehicles use the krastorio2 fuel instead of base game solid fuel.
+    --  So, replace those spawned items within the ruins.
+    replace_item_name_in_all_ruins(base_ruins, "solid-fuel", "fuel")
   end
 
   -- Provide the extended and modified ruin set as the "krastorio2" set.

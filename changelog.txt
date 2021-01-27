@@ -2,6 +2,8 @@
 Version: 0.1.2
 Date: ????
   Changes:
+    - Spawned fuel now respects the fuel overhaul setting.
+    - Updated to Factorio 1.1.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2020-09-24

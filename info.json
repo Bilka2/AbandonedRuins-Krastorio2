@@ -4,7 +4,7 @@
   "title": "The Ruins Mod - Krastorio2",
   "homepage": "https://github.com/Bilka2/AbandonedRuins-Krastorio2",
   "author": "Bilka",
-  "factorio_version": "1.0",
+  "factorio_version": "1.1",
   "description": "Adds a Krastorio2 ruin set to 'The Ruins Mod'",
   "dependencies": ["AbandonedRuins >= 1.0.0", "Krastorio2 >= 1.0.4"],
   "package":
